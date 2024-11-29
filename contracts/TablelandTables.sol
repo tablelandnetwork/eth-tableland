@@ -221,6 +221,7 @@ contract TablelandTables is
 
         return
             TablelandPolicy({
+                allowAlter: true,
                 allowInsert: true,
                 allowUpdate: true,
                 allowDelete: true,

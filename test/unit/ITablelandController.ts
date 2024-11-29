@@ -505,6 +505,7 @@ describe("ITablelandController", function () {
     expect(runEvent.args!.tableId).to.equal(tableId);
     expect(runEvent.args!.statement).to.equal(runStatement);
     expect(runEvent.args!.policy.allowInsert).to.equal(false);
+    expect(runEvent.args!.policy.allowAlter).to.equal(false);
     expect(runEvent.args!.policy.allowUpdate).to.equal(true);
     expect(runEvent.args!.policy.allowDelete).to.equal(false);
     expect(runEvent.args!.policy.whereClause).to.equal(

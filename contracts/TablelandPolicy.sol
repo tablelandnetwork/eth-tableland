@@ -11,6 +11,8 @@ struct TablelandPolicy {
     bool allowUpdate;
     // Whether or not the table should allow SQL DELETE statements.
     bool allowDelete;
+    // Whether or not the table should allow SQL ALTER TABLE statements.
+    bool allowAlter;
     // A conditional clause used with SQL UPDATE and DELETE statements.
     // For example, a value of "foo > 0" will concatenate all SQL UPDATE
     // and/or DELETE statements with "WHERE foo > 0".

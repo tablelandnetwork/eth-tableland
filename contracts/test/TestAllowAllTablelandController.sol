@@ -12,6 +12,7 @@ contract TestAllowAllTablelandController is TablelandController {
         // Return allow-all policy
         return
             TablelandPolicy({
+                allowAlter: true,
                 allowInsert: true,
                 allowUpdate: true,
                 allowDelete: true,

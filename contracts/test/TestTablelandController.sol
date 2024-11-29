@@ -57,6 +57,7 @@ contract TestTablelandController is TablelandController, Ownable {
         // Return policy
         return
             TablelandPolicy({
+                allowAlter: false,
                 allowInsert: false,
                 allowUpdate: true,
                 allowDelete: false,

@@ -31,6 +31,7 @@ contract TestReentrancyRunSQLLegacy is TablelandController, ERC721, Ownable {
         // Return allow-all policy
         return
             TablelandPolicy({
+                allowAlter: true,
                 allowInsert: true,
                 allowUpdate: true,
                 allowDelete: true,
